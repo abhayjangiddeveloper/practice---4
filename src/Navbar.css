@@ -1,0 +1,49 @@
+@import url('index.css');
+.nav_bar{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+}
+
+.nav_bar .logo{
+    /* border: 2px solid green; */
+    font-size: 5vmin;
+    color: var(--logo-color);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.nav_bar .links{
+    /* border: 2px solid green; */
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav_bar .links ul li{
+    list-style: none;
+}
+
+.nav_bar .links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+    background-image: linear-gradient(var(--logo-color), black);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+}
+
+.nav_bar .links ul li a:hover{
+    background-size: 100% 2px;
+}
+
+.store_logo{
+    width: 1.3rem;
+    cursor: pointer;
+}
