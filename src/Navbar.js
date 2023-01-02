@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 const logo = (
@@ -7,19 +7,35 @@ const logo = (
     </svg>
 )
 
+
 const Navbar = () => {
+    const [open_buttonhandler, setOpen_buttonhandler] = useState(true)
+
+    const open_button = () => {
+        setOpen_buttonhandler(!open_buttonhandler);
+        // document.getElementsByClassName('menu_open_button').style = className = 'active';
+    }
+
     return (
         <>
             <nav className="nav_bar">
                 <div className="logo">
                     SmartUV
                 </div>
-                <div className="links">
+                <div className={open_buttonhandler ? "mobile-size links" : "mobile-size"}>
                     <ul><li><a href="">home</a></li></ul>
                     <ul><li><a href="">products</a></li></ul>
                     <ul><li><a href="">how it works</a></li></ul>
                     <ul><li><a href="">blog</a></li></ul>
                     {logo}
+                </div>
+                <div className="menu_button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 menu_open_button active" onClick={open_button}>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                    </svg>
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 menu_close_button">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg> */}
                 </div>
             </nav>
         </>
