@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: 'Mulish', sans-serif;
   --logo-color:#090b60;
+  --button_and_border:#8447fa;
 }
 
 html{

@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3.5rem;
+    height: 4rem;
+    padding: 0rem 2rem;
 }
 
 .nav_bar .logo{
