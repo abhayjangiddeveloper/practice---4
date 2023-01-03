@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Section_1.css";
 
 const Section_1 = () => {
@@ -13,7 +14,7 @@ const Section_1 = () => {
                         <p className="section_1_pera index">To have good air quality is not as simple as moving away from the city to a quiet suburb or rural environment</p>
                     </div>
                     <div className="button">
-                        <button className="section_1_button index">Read Artical</button>
+                        <NavLink to='/artical_1' className="section_1_button index">Read Artical</NavLink>
                     </div>
                 </div>
             </div>

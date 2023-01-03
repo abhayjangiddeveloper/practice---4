@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const logo = (
@@ -20,13 +21,16 @@ const Navbar = () => {
         <>
             <nav className="nav_bar">
                 <div className="logo">
-                    SmartUV
+                    <NavLink className= "logo_link" to='/'>
+                        SmartUV
+                    </NavLink>
+
                 </div>
                 <div className={open_buttonhandler ? "mobile-size links" : "mobile-size"}>
-                    <ul><li><a href="">home</a></li></ul>
-                    <ul><li><a href="">products</a></li></ul>
-                    <ul><li><a href="">how it works</a></li></ul>
-                    <ul><li><a href="">blog</a></li></ul>
+                    <ul><li><NavLink to="/">home</NavLink></li></ul>
+                    <ul><li><NavLink to="">products</NavLink></li></ul>
+                    <ul><li><NavLink to="">how it works</NavLink></li></ul>
+                    <ul><li><NavLink to="">blog</NavLink></li></ul>
                     {logo}
                 </div>
                 <div className="menu_button">

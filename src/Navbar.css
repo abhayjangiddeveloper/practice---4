@@ -16,6 +16,10 @@
     cursor: pointer;
 }
 
+.logo_link{
+    text-decoration: none;
+}
+
 .nav_bar .links{
     /* border: 2px solid green; */
     display: flex;

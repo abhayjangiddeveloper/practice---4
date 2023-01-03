@@ -2,14 +2,20 @@ import React from "react";
 import "./App.css";
 import Navbar from "./Navbar";
 import Section_1 from "./Section_1";
+import { Routes, Route } from "react-router-dom";
+import Section_1_artical from "./Section_1_artical";
+import Error_page from "./Error_page";
 
-const App = () =>{
+const App = () => {
   return (
     <>
-      <div className="main_container">
-          <Navbar/>
-          <Section_1/>
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Section_1 />} />
+        <Route path="/artical_1" element ={<Section_1_artical/>}/>
+        <Route path = '*' element = {<Error_page/>}/>
+      </Routes>
+      {/* <Section_1 /> */}
     </>
   );
 }
