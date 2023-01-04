@@ -6,6 +6,7 @@
     align-items: center;
     height: 4rem;
     padding: 0rem 2rem;
+    z-index: -11;
 }
 
 .nav_bar .logo{
