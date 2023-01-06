@@ -1,0 +1,413 @@
+@import url('index.css');
+
+.section_1_artical_container {
+    overflow: hidden;
+}
+
+/* -----Social media section and text and heading start */
+.text_and_back_button {
+    /* border: 2px solid green; */
+    height: 40vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(175deg, #eef5fd, #f3f8fe00);
+}
+
+.text_and_social_media_div {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.back_button {
+    /* border: 2px solid green; */
+    display: flex;
+    text-decoration: none;
+    width: 2.7rem;
+    margin: 0rem 2rem;
+    color: var(--logo-color);
+    transition: 0.3s;
+    padding-top: 1rem;
+}
+
+.back_button_container {
+    /* border: 2px solid green; */
+    /* height: 4rem; */
+    margin-bottom: 1rem;
+    width: 100%;
+    /* position: fixed; */
+    /* top: 5rem; */
+}
+
+.back_button:hover {
+    margin: 0rem 1.6rem;
+    transition: 0.3s;
+
+}
+
+.text_and_social_media_div_heading {
+    text-align: center;
+    /* margin-top: 5rem;    */
+    /* border: 2px solid green; */
+}
+
+.text_and_social_media_div_time_text {
+    text-align: center;
+}
+
+.text_and_social_media_div_time_text p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.text_and_social_media_div_time_text p span {
+    font-weight: 900;
+}
+
+.text_and_social_media_div_pera {
+    text-align: center;
+}
+
+.text_and_social_media_div_heading h1 {
+    font-size: 3.5rem;
+    /* border: 2px solid green; */
+    width: 50vmax;
+    color: var(--logo-color);
+    font-weight: 900;
+}
+
+.text_and_social_media_div_pera p {
+    /* border: 2px solid black; */
+    width: 50vmax;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.social_media_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+    gap: 1rem;
+}
+
+.linkedin,
+.facebook,
+.twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+/* Social media section and text and heading End----- */
+
+/* -----Image section css Start */
+
+.artical1__img {
+    display: flex;
+    justify-content: center;
+}
+
+.artical1_img_center_div {
+    /* border: 2px solid green; */
+    width: 80%;
+    text-align: center;
+    height: 30rem;
+    background-image: url("https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
+
+/* Image section css end----- */
+
+/* -----Imgage and text section css start */
+
+.artical_1_text_and_img {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 7rem 0rem;
+}
+
+.artical_1_text_and_img_text {
+    /* border: 2px solid green; */
+    width: 35vmax;
+    padding: 3rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.artical_1_text_and_img_img img {
+    width: 35vmax;
+    border-radius: 1rem;
+}
+
+/*Imgage and text section css end----- */
+
+/* -----common section css start */
+
+.common-container {
+    /* border: 2px solid green; */
+    padding: 0rem 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.common-heading h2 {
+    font-size: 2.2rem;
+    /* border: 2px solid green; */
+    width: 30vmax;
+    color: var(--logo-color);
+}
+
+.common-pera p {
+    /* border: 2px solid green; */
+    width: 60vmax;
+    font-size: 1.2rem;
+}
+
+.common-subpera p {
+    /* border: 2px solid green; */
+    border-left: 4px solid rgb(167, 167, 167);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 60vmax;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* common section css end----- */
+
+/* -----First breac point  */
+
+@media screen and (max-width:1260px) {
+    .text_and_social_media_div {
+        width: 70vmax;
+        padding: 2rem 0rem;
+    }
+
+    .text_and_social_media_div_heading h1 {
+        width: 100%;
+    }
+
+    .text_and_social_media_div_pera p {
+        width: 100%;
+    }
+
+    /* -----common section css start */
+
+    .common-heading h2 {
+        width: 40vmax;
+    }
+
+    /* common section css end----- */
+
+}
+
+/* ----Second break point  */
+
+@media screen and (max-width:1050px) {
+    html {
+        font-size: 13px;
+    }
+
+    .text_and_social_media_div {
+        width: 80vmax;
+        padding: 2rem 0rem;
+    }
+
+    .text_and_social_media_div_heading h1 {
+        width: 100%;
+    }
+
+    .text_and_social_media_div_pera p {
+        width: 100%;
+    }
+}
+
+/* -----Third break point */
+
+@media screen and (max-width:992px) {
+    /* -----Imgage and text section css start */
+
+    .artical_1_text_and_img {
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 7rem 0rem;
+        flex-direction: column;
+    }
+
+    .artical_1_text_and_img_text {
+        /* border: 2px solid green; */
+        width: 60vmax;
+        padding: 3rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+
+    .artical_1_text_and_img_img img {
+        width: 60vmax;
+        border-radius: 1rem;
+    }
+
+    /*Imgage and text section css end----- */
+
+}
+
+/* -----Four break point */
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 11px;
+    }
+
+    .text_and_social_media_div_heading {
+        text-align: center;
+        /* margin-top: 5rem;    */
+        /* border: 2px solid green; */
+        width: 50%;
+    }
+
+    .text_and_social_media_div_heading h1 {
+        font-size: 3rem;
+    }
+
+    .text_and_social_media_div_pera {
+        /* border: 2px solid green; */
+        width: 50%;
+    }
+
+    .text_and_social_media_div_pera p {
+        font-size: 2rem;
+    }
+
+    /* -----common section css start */
+
+    .common-container {
+        /* border: 2px solid green; */
+        padding: 0rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    /* common section css end----- */
+}
+
+/* -----Five break point */
+
+@media screen and (max-width:430px) {
+    /* -----Imgage and text section css start */
+
+    .artical_1_text_and_img {
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 7rem 0rem;
+    }
+
+    .artical_1_text_and_img_text {
+        /* border: 2px solid green; */
+        width: 35vmax;
+        padding: 3rem;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .artical_1_text_and_img_img img {
+        width: 35vmax;
+        border-radius: 1rem;
+    }
+
+    /*Imgage and text section css end----- */
+
+    /* -----common section css start */
+    .common-container {
+        /* border: 2px solid green; */
+        padding: 0rem 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    /* common section css end----- */
+
+}
+
+/* -----Six break point */
+
+@media screen and (max-width:400px) {
+    /* -----Imgage and text section css start */
+
+    .artical_1_text_and_img {
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 7rem 0rem;
+    }
+
+    .artical_1_text_and_img_text {
+        /* border: 2px solid green; */
+        width: 40vmax;
+        padding: 2rem 0rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .artical_1_text_and_img_img img {
+        width: 35vmax;
+        border-radius: 1rem;
+    }
+
+    /*Imgage and text section css end----- */
+
+    /* -----common section css start */
+    .common-container {
+        /* border: 2px solid green; */
+        padding: 0rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .common-pera p, .common-subpera p{
+        /* border: 2px solid green; */
+        width: 40vmax;
+        font-size: 1.5rem;
+    }
+    /* common section css end----- */
+
+}
+

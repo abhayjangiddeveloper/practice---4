@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Section_1.css";
+import "./Section1.css";
+import Section2 from "./Section2";
+
 
 const Section_1 = () => {
     return (
@@ -17,7 +19,8 @@ const Section_1 = () => {
                         <NavLink to='/artical_1' className="section_1_button index">Read Artical</NavLink>
                     </div>
                 </div>
-            </div>
+            </div>      
+            <Section2/>
         </>
     );
 }
