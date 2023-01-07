@@ -15,7 +15,7 @@ const Section2 = () => {
                         button='Read Article'
                     />
                     <Dartical
-                        img='https://images.unsplash.com/photo-1577017040065-650ee4d43339?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
+                        img='https://images.unsplash.com/photo-1673085796350-a842999ec21f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
                         heading='How VOC Affects Your Indoor Air Quality'
                         pera='Using UV light for disinfection is becoming on essential hygiene practice for both spaces.'
                         button='Read Article'

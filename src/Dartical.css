@@ -45,3 +45,30 @@
     border-radius: 0.5rem;
     cursor: pointer;
 }
+
+@media screen and (max-width:740px) {
+    .Dartical-main-container,
+    .Dartical-text-container,
+    .Dartical-text-container-heading,
+    .Dartical-text-container-pera{
+        width: 100%;
+        /* border: 2px solid black; */
+    }
+
+    .Dartical-img-container-img{
+        width: 90%;
+        /* height: 25rem; */
+    }
+}
+
+
+
+@media screen and (max-width:550px) {
+    .Dartical-main-container,
+    .Dartical-text-container,
+    .Dartical-text-container-heading,
+    .Dartical-text-container-pera{
+        width: 100%;
+        /* border: 2px solid black; */
+    }
+}

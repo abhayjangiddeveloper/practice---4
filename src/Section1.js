@@ -1,7 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import ScienceBehind from "./ScienceBehind";
 import "./Section1.css";
 import Section2 from "./Section2";
+import Section3 from "./Section3";
 
 
 const Section_1 = () => {
@@ -21,6 +23,8 @@ const Section_1 = () => {
                 </div>
             </div>      
             <Section2/>
+            <ScienceBehind/>
+            <Section3/>
         </>
     );
 }

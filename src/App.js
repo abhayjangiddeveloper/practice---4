@@ -5,6 +5,7 @@ import Section1 from "./Section1";
 import { Routes, Route } from "react-router-dom";
 import Section1Artical from "./Section1Artical";
 import ErrorPage from "./ErrorPage.js";
+import Footer from "./Footer";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/artical_1" element ={<Section1Artical/>}/>
         <Route path = '*' element = {<ErrorPage/>}/>
       </Routes>
+      <Footer/>
     </>
   );
 }
