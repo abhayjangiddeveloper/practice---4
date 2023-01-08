@@ -27,10 +27,10 @@ const Navbar = () => {
 
                 </div>
                 <div className={open_buttonhandler ? "mobile-size links" : "mobile-size"}>
-                    <ul><li><NavLink to="/">home</NavLink></li></ul>
-                    <ul><li><NavLink to="">products</NavLink></li></ul>
-                    <ul><li><NavLink to="">how it works</NavLink></li></ul>
-                    <ul><li><NavLink to="">blog</NavLink></li></ul>
+                    <ul><li onClick={open_button}><NavLink to="/">home</NavLink></li></ul>
+                    <ul><li onClick={open_button}><NavLink to="">products</NavLink></li></ul>
+                    <ul><li onClick={open_button}><NavLink to="">how it works</NavLink></li></ul>
+                    <ul><li onClick={open_button}><NavLink to="">blog</NavLink></li></ul>
                     {logo}
                 </div>
                 <div className="menu_button">
